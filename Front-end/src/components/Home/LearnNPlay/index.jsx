@@ -130,7 +130,7 @@ const LearnNPlay = () => {
               }}
               component="img"
               height="325"
-              image="https://cdn.discordapp.com/attachments/1030241278874624103/1031045374061846619/Level_4.png"
+              image="https://cdn.discordapp.com/attachments/1031084740754808913/1031133129374703626/Level_4.jpg"
               alt="green iguana"
             />
             <CardContent>

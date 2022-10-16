@@ -1,0 +1,36 @@
+.letter {
+    color: rgb(27, 101, 180);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.timer {
+
+    top: 0;
+    right: 0;
+}
+
+.webCamContainer {
+    width: fit-content;
+    position: relative;
+}
+
+.checkIcon {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    color: green;
+    font-size: 300px;
+}
+
+.webcam {
+    border-radius: 10px;
+}
+
+.startBtn {
+    border-radius: 10px;
+}

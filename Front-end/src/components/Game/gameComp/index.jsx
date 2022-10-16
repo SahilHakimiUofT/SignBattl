@@ -187,7 +187,7 @@ const GameComp = () => {
             Ready
           </button>
         )}
-        <h1>{score}</h1>
+        <h1>{"Current Score:" + score}</h1>
       </div>
     </div>
   );

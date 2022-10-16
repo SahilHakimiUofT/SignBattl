@@ -1,10 +1,14 @@
 .letter {
+  color: rgb(27, 101, 180);
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2rem;
 }
 .timer {
-  position: absolute;
+  
   top: 0;
   right: 0;
 }
@@ -23,5 +27,9 @@
 }
 
 .webcam{
+  border-radius: 10px;
+}
+
+.startBtn{
   border-radius: 10px;
 }

@@ -15,14 +15,35 @@ const GameComp = () => {
   const [gameStartState, setGameStartState] = useState(false);
   const [showCorrect, setShowCorrect] = useState(false);
   const [timer, setTimer] = useState("0");
-  const letterList = ["A", "B", "C", "D", "F", "G", "I", "K", "L", "M", "N", "O", "R", "V", "Y"];
-  const [currentLetter, setCurrentLetter] = useState(letterList[Math.floor(Math.random() * letterList.length)]);
+  const [score, setScore] = useState(0);
+  const letterList = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F",
+    "G",
+    "I",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "R",
+    "V",
+    "Y",
+  ];
+  const [currentLetter, setCurrentLetter] = useState(
+    letterList[Math.floor(Math.random() * letterList.length)]
+  );
 
   const timerRef = useRef(null);
   const gameStartRef = useRef(null);
+  const letterRef = useRef(null);
   timerRef.current = timer;
   gameStartRef.current = gameStartState;
-  let score = 0;
+  letterRef.current = currentLetter;
+
   const generateRandomLetter = () => {
     return letterList[Math.floor(Math.random() * letterList.length)];
   };
@@ -40,7 +61,11 @@ const GameComp = () => {
     }, 1000);
   };
   async function detect(net) {
-    if (typeof webcamRef.current !== "undefined" && webcamRef.current !== null && webcamRef.current.video.readyState === 4) {
+    if (
+      typeof webcamRef.current !== "undefined" &&
+      webcamRef.current !== null &&
+      webcamRef.current.video.readyState === 4
+    ) {
       // Get Video Properties
       const video = webcamRef.current.video;
       const videoWidth = webcamRef.current.video.videoWidth;
@@ -76,15 +101,24 @@ const GameComp = () => {
           ]);
 
           const estimatedGestures = await GE.estimate(hand[0].landmarks, 6.5);
-          if (estimatedGestures.gestures !== undefined && estimatedGestures.gestures.length > 0) {
+          if (
+            estimatedGestures.gestures !== undefined &&
+            estimatedGestures.gestures.length > 0
+          ) {
             const confidence = estimatedGestures.gestures.map((p) => p.score);
-            const maxConfidence = confidence.indexOf(Math.max.apply(undefined, confidence));
-            console.log("checking");
-            if (estimatedGestures.gestures[maxConfidence].name === currentLetter) {
-              console.log("correct");
+            const maxConfidence = confidence.indexOf(
+              Math.max.apply(undefined, confidence)
+            );
+
+            if (
+              estimatedGestures.gestures[maxConfidence].name ===
+              letterRef.current
+            ) {
               setCurrentLetter(generateRandomLetter());
+              setScore((prevScore) => prevScore + 1);
               setShowCorrect(true);
               resetCheckState();
+              return;
             }
           }
         }

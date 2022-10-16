@@ -1,0 +1,49 @@
+body{
+    background-image: linear-gradient(to bottom right, #071f4d, #065c78);
+    font-family: "Aladin";
+    display: flex;
+    justify-content: center;
+    
+}
+.lessonsContainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.signCards {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    place-items: center;
+    margin-bottom: 100px;
+
+
+}
+
+.zoom{
+     margin: 1rem;
+}
+
+.openGameBtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    
+
+    button{
+        background: rgba(255, 255, 255, 0.14);
+        font-family: "Aladin";
+        color: white;
+        padding: 1rem;
+        font-size: 30px;
+    }
+}
+
+.title{
+   margin-bottom: 100px;
+   text-align: center;
+   font-size: 150px;
+}

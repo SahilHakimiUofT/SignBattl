@@ -6,7 +6,7 @@ const Home = () => {
   const navItems = [
     { to: "home", name: "Home" },
     { to: "learn", name: "Learn 'n Play" },
-    { to: "about", name: "About" },
+    { to: "leaderboard", name: "Lead'n Board" },
   ];
   return (
     <div>

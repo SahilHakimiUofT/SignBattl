@@ -4,8 +4,15 @@ import CardActions from "@mui/material/CardActions";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Router, useNavigate } from "react-router-dom";
 
 const LearnNPlay = () => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `lesson`;
+    navigate(path);
+  };
+
   return (
     <div id="learn" className="learnContainer">
       <div className="learnContent">
@@ -18,6 +25,7 @@ const LearnNPlay = () => {
         </div>
         <div className="cardList">
           <Card
+            onClick={routeChange}
             className="zoom"
             sx={{
               transition: "all .1s ease-in-out",

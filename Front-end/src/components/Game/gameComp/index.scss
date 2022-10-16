@@ -1,0 +1,23 @@
+.letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.timer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.webCamContainer {
+  width: fit-content;
+  position: relative;
+}
+
+.checkIcon {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  color: green;
+  font-size: 300px;
+}

@@ -1,16 +1,20 @@
 import Navbar from "../layouts/Navbar";
 import "./index.scss";
+import Landing from "./Landing";
+import LearnNPlay from "./LearnNPlay";
 const Home = () => {
   const navItems = [
+    { to: "home", name: "Home" },
+    { to: "learn", name: "Learn 'n Play" },
     { to: "about", name: "About" },
-    { to: "skills", name: "Skills" },
   ];
   return (
-    <div className="container">
-      <Navbar navItems={navItems} />
-      <section id="about" className="about">
-        <h1>About</h1>
-      </section>
+    <div>
+      <div className="navbar">
+        <Navbar navItems={navItems} />
+      </div>
+      <Landing id="home" />
+      <LearnNPlay id="learn" />
     </div>
   );
 };

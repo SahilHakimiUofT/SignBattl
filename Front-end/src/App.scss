@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("truetype");
+}
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBellAurore.woff2") format("woff2"), url("./assets/fonts/LaBelleAurore.woff") format("woff");
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Aladin";
+  src: url("./assets/fonts/Aladin-Regular.ttf") format("truetype");
+}
+input,
+textarea {
+  font-family: "Helvetica Neue";
+}

@@ -1,0 +1,26 @@
+.learnContainer {
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: fit-content;
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(to bottom right, #071f4d, #065c78);
+  font-family: "Aladin";
+  display: flex;
+  justify-content: center;
+}
+
+.learnHeader {
+  text-align: center;
+  font-size: 24px;
+  height: fit-content;
+}
+
+.learnContent {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  height: fit-content;
+}

@@ -46,14 +46,13 @@ function Lesson() {
 
         <div className="openGameBtn">
           {!renderGame && (
-            <Button onClick={changeRender}>Test You Knowledge</Button>
+            <Button onClick={changeRender}>Test Your Knowledge</Button>
           )}
           {renderGame && <GameComp />}
         </div>
 
         <div className="signCards">
           {aslbet.map((item) => {
-            console.log(item.letter);
             return (
               <>
                 <Modal

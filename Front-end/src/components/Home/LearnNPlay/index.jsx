@@ -50,7 +50,7 @@ const LearnNPlay = () => {
             />
             <CardContent>
               <h2 className="cardTitle">Peaseant</h2>
-              Tapas
+              Intro ASL with alphabets
               <Typography variant="h11" color="text.secondary"></Typography>
             </CardContent>
           </Card>
@@ -79,7 +79,7 @@ const LearnNPlay = () => {
             />
             <CardContent>
               <h2 className="cardTitle">Lord</h2>
-              <Typography variant="h11">saad</Typography>
+              <Typography variant="h11">Coming Soon.....</Typography>
             </CardContent>
           </Card>
           <Card
@@ -107,7 +107,7 @@ const LearnNPlay = () => {
             />
             <CardContent>
               <h2 className="cardTitle">Noblemen</h2>
-              <Typography variant="h11">Imran</Typography>
+              <Typography variant="h11">Coming Soon.....</Typography>
             </CardContent>
           </Card>
           <Card
@@ -135,7 +135,9 @@ const LearnNPlay = () => {
             />
             <CardContent>
               <h2 className="cardTitle">King</h2>
-              <Typography variant="h11">sahil</Typography>
+              <Typography variant="h11">
+                Sign Language Pro: Coming Soon.....
+              </Typography>
             </CardContent>
           </Card>
         </div>

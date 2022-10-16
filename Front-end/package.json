@@ -15,6 +15,7 @@
     "@tensorflow-models/handpose": "0.0.7",
     "@tensorflow/tfjs": "^4.0.0",
     "fingerpose": "^0.1.0",
+    "framer-motion": "^7.5.3",
     "import": "0.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

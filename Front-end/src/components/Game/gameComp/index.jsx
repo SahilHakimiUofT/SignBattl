@@ -28,7 +28,6 @@ const GameComp = () => {
     "L",
     "M",
     "N",
-    "O",
     "R",
     "V",
     "Y",
@@ -94,7 +93,6 @@ const GameComp = () => {
             Handsigns.lSign,
             Handsigns.mSign,
             Handsigns.nSign,
-            Handsigns.oSign,
             Handsigns.rSign,
             Handsigns.vSign,
             Handsigns.ySign,
@@ -115,7 +113,7 @@ const GameComp = () => {
               letterRef.current
             ) {
               setCurrentLetter(generateRandomLetter());
-              setScore((prevScore) => prevScore + 1);
+              setScore((prevScore) => prevScore + 10);
               setShowCorrect(true);
               resetCheckState();
               return;

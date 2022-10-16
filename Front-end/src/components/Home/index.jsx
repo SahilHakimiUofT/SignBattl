@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <div className="navbar">
-        <Navbar navItems={navItems} />
+        <Navbar className="zoom" navItems={navItems} />
       </div>
       <Landing id="home" />
       <LearnNPlay id="learn" />

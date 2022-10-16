@@ -20,7 +20,32 @@
 
 .learnContent {
   position: relative;
-  top: 200px;
+  top: 125px;
   width: 100%;
   height: fit-content;
 }
+
+.cardList{
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.cardTitle{
+  margin-top: none !important;
+}
+
+.zoom {
+  transition: all .5s ease-in-out;
+  /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+

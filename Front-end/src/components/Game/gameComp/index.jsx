@@ -153,7 +153,7 @@ const GameComp = () => {
   };
   const getDeadTime = () => {
     let deadline = new Date();
-    deadline.setSeconds(deadline.getSeconds() + 30);
+    deadline.setSeconds(deadline.getSeconds() + 60);
     return deadline;
   };
   // useEffect(() => {

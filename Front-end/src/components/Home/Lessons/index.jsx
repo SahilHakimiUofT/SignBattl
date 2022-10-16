@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Router, useNavigate } from "react-router-dom";
+import GameComp from "../../Game/gameComp";
 
 import { aslbet } from "./alphabet";
 
@@ -22,8 +23,9 @@ function Lesson() {
           {!renderGame && (
             <Button onClick={changeRender}>Test You Knowledge</Button>
           )}
-          {renderGame && <div>GAME COMPONENT GOES HERE</div>}
+          {renderGame && <GameComp />}
         </div>
+
         <div className="signCards">
           {aslbet.map((item) => {
             return (

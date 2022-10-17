@@ -16,22 +16,7 @@ const GameComp = () => {
   const [showCorrect, setShowCorrect] = useState(false);
   const [timer, setTimer] = useState("0");
   const [score, setScore] = useState(0);
-  const letterList = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "F",
-    "G",
-    "I",
-    "K",
-    "L",
-    "M",
-    "N",
-    "R",
-    "V",
-    "Y",
-  ];
+  const letterList = ["A", "B", "C", "D", "I", "K", "L", "R", "V", "Y"];
   const [currentLetter, setCurrentLetter] = useState(
     letterList[Math.floor(Math.random() * letterList.length)]
   );
@@ -86,13 +71,9 @@ const GameComp = () => {
             Handsigns.bSign,
             Handsigns.cSign,
             Handsigns.dSign,
-            Handsigns.fSign,
-            Handsigns.gSign,
             Handsigns.iSign,
             Handsigns.kSign,
             Handsigns.lSign,
-            Handsigns.mSign,
-            Handsigns.nSign,
             Handsigns.rSign,
             Handsigns.vSign,
             Handsigns.ySign,

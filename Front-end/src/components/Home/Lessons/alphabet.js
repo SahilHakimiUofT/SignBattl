@@ -2,7 +2,7 @@ export const aslbet = [
   {
     letter: "a",
     image:
-      "https://cdn.discordapp.com/attachments/1030241278874624103/1031078776982999101/G_BSL.png",
+      "https://media.discordapp.net/attachments/1031084740754808913/1031084954345545779/A_BSL.png",
   },
   {
     letter: "b",
